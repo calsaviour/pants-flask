@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/calsaviour/pants-flask.svg?branch=experimental-flask)](https://travis-ci.org/calsaviour/pants-flask)
+
 # Running a src example
 ./pants run src/python/helloworld:helloworld
 
