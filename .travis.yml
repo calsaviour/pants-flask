@@ -17,6 +17,9 @@ before_cache:
   # thrash the cache.  Skip caching these.
   - rm -rf $HOME/.cache/pants/stats
 
+before_install:
+ - chmod +x ./build-support/bin/ci.sh
+
 cache:
   directories:
     - $HOME/.cache/pants
