@@ -8,4 +8,18 @@ def classify(features_train, labels_train):
 
     ### your code goes here!
     clf = GaussianNB()
-    return clf.fit(features_train, labels_train)
+        ### fit the classifier on the training features and labels
+    clf.fit(features_train, labels_train)
+
+    return clf
+
+def accuracy(features_train, labels_train):
+    clf = classify(features_train, labels_train)
+
+    ### calculate and return the accuracy on the test data
+    ### this is slightly different than the example,
+    ### where we just print the accuracy
+    ### you might need to import an sklearn module
+    accuracy = clf.score(features_train, labels_train)
+
+    return accuracy
